@@ -1,0 +1,51 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Vegan Lists UK</ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+
+  <div padding>
+    <ion-segment [(ngModel)]="type">
+      <ion-segment-button value="supermarket" (click)="changeSegment(type)">
+        <ion-icon name="cart" item-left></ion-icon>
+        Supermarkets
+      </ion-segment-button>
+      <ion-segment-button value="restaurant" (click)="changeSegment(type)">
+        <ion-icon name="restaurant" item-left></ion-icon>
+        Restaurants
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="type">
+
+    <div *ngSwitchWhen="'supermarket'">
+      <ion-searchbar [(ngModel)]="searchQuery" (input)="filterStores($event, 'supermarket')"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="#supermarket of supermarkets" (click)="viewStore(supermarket)">
+          <ion-thumbnail item-left>
+            <img class="store-logo-thumbnail" src="img/{{supermarket.logo}}" alt="{{supermarket.title}}">
+          </ion-thumbnail>
+          <h2>{{supermarket.title}}</h2>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div *ngSwitchWhen="'restaurant'">
+      <ion-searchbar [(ngModel)]="searchQuery" (input)="filterStores($event, 'restaurant')"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="#restaurant of restaurants" (click)="viewStore(restaurant)">
+          <ion-thumbnail item-left>
+            <img class="store-logo-thumbnail" src="img/{{restaurant.logo}}" alt="{{restaurant.title}}">
+          </ion-thumbnail>
+          <h2>{{restaurant.title}}</h2>
+        </ion-item>
+      </ion-list>
+    </div>
+
+  </div>
+
+</ion-content>

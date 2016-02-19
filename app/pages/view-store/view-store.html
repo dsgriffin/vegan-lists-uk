@@ -1,0 +1,36 @@
+<ion-navbar *navbar>
+    <ion-title>
+        {{store.title}} Vegan List(s)
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="view-store">
+    <ion-card>
+        <img class="store-logo-large" src="img/{{store.logo}}" alt="{{store.title}}">
+        <ion-card-content>
+
+            <div *ngIf="store.official != null">
+                <hr>
+                <h2 class="card-title">Official Lists</h2>
+                <div bind-hidden="store.official.remoteSite == null">
+                    <button (click)="viewRemoteSite(store.official.remoteSite)"><ion-icon name="link"></ion-icon>View Site (HTML, Online)</button>
+                    <p class="card-desc">Official site may contain a more recently updated Vegan list</p>
+                </div>
+                <div bind-hidden="store.official.localFile == null">
+                    <button (click)="viewLocalPDF(store.official.localFile)" secondary><ion-icon name="document"></ion-icon>Get Local File (PDF, Offline)</button>
+                    <p class="card-desc">Offline list last updated: {{store.official.localFileUpdated}}</p>
+                </div>
+            </div>
+
+            <div *ngIf="store.unofficial != null">
+                <hr>
+                <h2 class="card-title">Unofficial Lists</h2>
+                <div bind-hidden="store.unofficial.remoteSite == null">
+                    <button (click)="viewRemoteSite(store.unofficial.remoteSite)"><ion-icon name="link"></ion-icon>View Site (HTML, Online)</button>
+                    <p class="card-desc">Unofficial lists are not verified by the store - remember to check ingredients in-store</p>
+                </div>
+            </div>
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>
