@@ -6,16 +6,19 @@ A simple Ionic 2 iOS app for viewing/collecting official/unofficial Vegan food l
 
 # Why?
 
-I created this app partly because I always seem to lose internet connection in places like supermarkets when I want to find what Vegan food they sell (and somehow I keep managing to forget to research it before I go out).
-
-The second part is because I'd like to learn Angular 2/Ionic 2 and there's no better way than to learn by doing :)
+I created this app partly because I always seem to lose internet connection in places like supermarkets when I want to find what Vegan food they sell (and somehow I keep managing to forget to research it before I go out). The second part is because I'd like to learn Angular 2/Ionic 2 and there's no better way than to learn by doing :)
 
 # Features/Details
 * View both official and unofficial lists of Vegan food products (provided by the store themselves or volunteers respectively).
 * Online links may lead to newer lists than the ones available offline.
 * Offline lists are in the form of PDF's and vary in description/size.
 
-# Support
+
+# Requirements
+
+As Offline lists are PDF files, you'll need a local application that can view them. iPhones come with [iBooks](https://support.apple.com/en-gb/HT201478) by default; [Adobe Acrobat](https://itunes.apple.com/gb/app/adobe-acrobat-reader/id469337564?mt=8) is a good alternative.
+
+# Device Support
 
 iPhone only (5c and above), requires iOS 8 or above.
 
