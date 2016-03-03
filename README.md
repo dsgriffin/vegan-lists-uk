@@ -24,7 +24,7 @@ iPhone only (5c and above), requires iOS 8 or above.
 
 # Build
 
-**Requirements:** `xcode`, `Node v4.0+`, `npm v2.0+`
+**Requirements:** `Xcode`, `Node v4.0+`, `npm v2.0+`
    
 If you have the above, then:
 
@@ -32,7 +32,7 @@ If you have the above, then:
 * `npm install`
 * `ionic build ios` to build for the platform
 * `ionic prepare ios` to prepare it for iOS testing/running
-* open up `xcode` and test via device/emulator
+* open up `Xcode` and test via device/simulator
 
 # App Store
 
