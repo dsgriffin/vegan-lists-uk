@@ -1,3 +1,5 @@
+### [deprecation notice - this is no longer available on the app store & there are no future plans to maintain the repo as of 2017]
+
 # Vegan Lists UK 
 
 ![logo](https://github.com/dsgriffin/vegan-lists-uk/raw/master/resources/ios/icon/icon-76%402x.png)
