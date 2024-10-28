@@ -6,10 +6,6 @@
 
 A simple Ionic 2 iOS app for viewing/collecting official/unofficial Vegan food lists (UK-based).
 
-# Why?
-
-I created this app partly because I always seem to lose internet connection in places like supermarkets when I want to find what Vegan food they sell (and somehow I keep managing to forget to research it before I go out). The second part is because I'd like to learn Angular 2/Ionic 2 and there's no better way than to learn by doing :)
-
 # Features/Details
 * View both official and unofficial lists of Vegan food products (provided by the store themselves or volunteers respectively).
 * Online links may lead to newer lists than the ones available offline.
