@@ -2,8 +2,6 @@
 
 # Vegan Lists UK 
 
-![logo](https://github.com/dsgriffin/vegan-lists-uk/raw/master/resources/ios/icon/icon-76%402x.png)
-
 A simple Ionic 2 iOS app for viewing/collecting official/unofficial Vegan food lists (UK-based).
 
 # Features/Details
