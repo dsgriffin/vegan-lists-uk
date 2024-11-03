@@ -1,5 +1,3 @@
-### [Deprecation Notice - this is no longer available on the app store & there are no future plans to maintain the repo as of 2017]
-
 # Vegan Lists UK 
 
 A simple Ionic 2 iOS app for viewing/collecting official/unofficial Vegan food lists (UK-based).
