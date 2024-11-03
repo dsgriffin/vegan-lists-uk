@@ -1,6 +1,6 @@
 # Vegan Lists UK 
 
-A simple Ionic 2 iOS app for viewing/collecting official/unofficial Vegan food lists (UK-based).
+A simple Ionic-based iOS app for viewing/saving official/unofficial vegan food lists (UK based).
 
 # Features/Details
 * View both official and unofficial lists of Vegan food products (provided by the store themselves or volunteers respectively).
